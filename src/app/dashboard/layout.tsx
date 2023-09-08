@@ -5,7 +5,7 @@ export default function DashboardLayout({ children } : { children: React.ReactNo
     return (
         <div className='flex flex-col min-h-screen'>
             <Navbar />
-            <div className='flex flex-col min-h-[92vh]'>
+            <div className='flex flex-col h-[92vh]'>
                 {children}
             </div>
             <Footer />

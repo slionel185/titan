@@ -1,4 +1,3 @@
-import { z } from 'zod'
 import bcrypt from 'bcrypt'
 
 import { prisma } from '@/utils/prisma'
@@ -33,6 +32,7 @@ export const postUser = procedure
             }
         })
 
+        console.log(newUser)
         if(newUser) return { status: 201, message: 'User created.' }
         return { status: 400, message: 'Unknown error occurred.' }
     })

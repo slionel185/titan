@@ -56,7 +56,7 @@ export default function NavMenu() {
                             <ul className='flex flex-col gap-2 p-3 w-[400px]'>
                                 <li>
                                     <NavigationMenuLink asChild>
-                                        <a href='/dashboard' className='block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground'>
+                                        <a href='/dashboard/training/prospects' className='block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground'>
                                             <div className='text-sm font-medium leading-none'>Prospects</div>
                                             <p className='line-clamp-2 text-sm leading-snug text-muted-foreground'>Search potential clients.</p>
                                         </a>
@@ -65,8 +65,8 @@ export default function NavMenu() {
 
                                 <li>
                                     <NavigationMenuLink asChild>
-                                        <a href='/dashboard' className='block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground'>
-                                            <div className='text-sm font-medium leading-none'>Members</div>
+                                        <a href='/dashboard/training/clients' className='block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground'>
+                                            <div className='text-sm font-medium leading-none'>Clients</div>
                                             <p className='line-clamp-2 text-sm leading-snug text-muted-foreground'>Search existing clients.</p>
                                         </a>
                                     </NavigationMenuLink>
@@ -74,7 +74,7 @@ export default function NavMenu() {
 
                                 <li>
                                     <NavigationMenuLink asChild>
-                                        <a href='/dashboard' className='block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground'>
+                                        <a href='/dashboard/training/workouts' className='block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground'>
                                             <div className='text-sm font-medium leading-none'>Workout Plans</div>
                                             <p className='line-clamp-2 text-sm leading-snug text-muted-foreground'>Create and edit your workout plans.</p>
                                         </a>
@@ -83,7 +83,7 @@ export default function NavMenu() {
 
                                 <li>
                                     <NavigationMenuLink asChild>
-                                        <a href='/dashboard' className='block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground'>
+                                        <a href='/dashboard/training/meals' className='block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground'>
                                             <div className='text-sm font-medium leading-none'>Meal Plans</div>
                                             <p className='line-clamp-2 text-sm leading-snug text-muted-foreground'>Create and edit your meal plans.</p>
                                         </a>

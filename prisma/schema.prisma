@@ -28,25 +28,86 @@ model Prospect {
 model User {
   id String @id @default(uuid())
 
-  email    String @unique
+  email    String  @unique
   image    String?
-  username String @unique
+  username String  @unique
   password String
 
   type UserType @default(MEMBER)
 
-  createdAt DateTime @default(now())
-  updatedAt DateTime @default(now())
+  created_at DateTime @default(now())
+  updated_at DateTime @default(now())
+
+  workout_plans     WorkoutPlan[] @relation(name: "Author")
+  assigned_workouts WorkoutPlan[] @relation(name: "Assigned")
 }
 
-model WorkoutPlan {
-  id String @id @default(uuid())
+enum ExerciseTarget {
+  Abs
+  Forearms
+  Biceps
+  Triceps
+  Shoulders
+  Back
+  Chest
+  Quadriceps
+  Hamstrings
+  Calves
+}
 
-  name String
+enum ExerciseLevel {
+  Beginner
+  Intermediate
+  Advanced
+}
+
+enum WeightType {
+  KILOGRAMS
+  POUNDS
 }
 
 model Exercise {
   id String @id @default(uuid())
 
-  name String
+  name        String
+  decsription String
+
+  video     String?
+  equipment String?
+  target    ExerciseTarget
+  level     ExerciseLevel
+
+  sets      Set[]
+  rest_time Int?
+
+  workout_plan_id String
+  workout_plan    WorkoutPlan @relation(fields: [workout_plan_id], references: [id])
+}
+
+model Set {
+  id String @id @default(uuid())
+
+  weight_type WeightType
+
+  reps   Int
+  weight Int
+
+  exercise_id String
+  exercise    Exercise @relation(fields: [exercise_id], references: [id])
+}
+
+model WorkoutPlan {
+  id String @id @default(uuid())
+
+  name        String
+  description String
+
+  target ExerciseTarget[]
+
+  exercises Exercise[]
+
+  user_id String
+  user    User   @relation(fields: [user_id], references: [id], name: "Author")
+
+  assigned User[] @relation(name: "Assigned")
 }

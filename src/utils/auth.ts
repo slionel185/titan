@@ -29,6 +29,7 @@ export const authOptions: NextAuthOptions = {
                 password: { type: 'password' }
             },
             async authorize(credentials, req) {
+                console.log(credentials)
                 if(!credentials || !credentials.username || !credentials.password) return null
 
                 const user = await prisma.user.findFirst({ where: { username: credentials.username }})
@@ -36,6 +37,7 @@ export const authOptions: NextAuthOptions = {
 
                 const match = await bcrypt.compare(credentials.password, user.password)
 
+                console.log(user, match)
                 if(user && match) return user
                 return null
             },

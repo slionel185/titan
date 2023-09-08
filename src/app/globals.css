@@ -84,3 +84,17 @@
     @apply bg-background text-foreground;
   }
 }
+
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: hsl(var(--background));
+  border-radius: 3px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: hsl(var(--primary));
+  border-radius: 3px;
+}

@@ -65,7 +65,7 @@ export default function NavSheet() {
                                 <AccordionContent>
                                     <div className='flex flex-col gap-4'>
                                         <Button asChild variant={'outline'}>
-                                            <a href='/dashboard' className='block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground'>
+                                            <a href='/dashboard/training/prospects' className='block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground'>
                                                 <div className='flex text-sm w-full font-medium leading-none'>
                                                     <UserPlus className='mr-2 h-4 w-4' />
                                                     Prospects
@@ -74,7 +74,7 @@ export default function NavSheet() {
                                         </Button>
 
                                         <Button asChild variant={'outline'}>
-                                            <a href='/dashboard' className='block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground'>
+                                            <a href='/dashboard/training/clients' className='block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground'>
                                                 <div className='flex text-sm w-full font-medium leading-none'>
                                                     <Users className='mr-2 h-4 w-4' />
                                                     Clients
@@ -83,7 +83,7 @@ export default function NavSheet() {
                                         </Button>
 
                                         <Button asChild variant={'outline'}>
-                                            <a href='/dashboard' className='block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground'>
+                                            <a href='/dashboard/training/workouts' className='block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground'>
                                                 <div className='flex text-sm w-full font-medium leading-none'>
                                                     <Dumbbell className='mr-2 h-4 w-4' />
                                                     Workout Plans
@@ -92,7 +92,7 @@ export default function NavSheet() {
                                         </Button>
 
                                         <Button asChild variant={'outline'}>
-                                            <a href='/dashboard' className='block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground'>
+                                            <a href='/dashboard/training/meals' className='block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground'>
                                                 <div className='flex text-sm w-full font-medium leading-none'>
                                                     <Salad className='mr-2 h-4 w-4' />
                                                     Meal Plans
